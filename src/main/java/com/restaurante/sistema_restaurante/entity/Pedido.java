@@ -15,12 +15,13 @@ public class Pedido {
     private String descricao;
     private double preco;
     private Date data;
+    private String quantidade;
 
-
-    public Pedido(Long id, String descricao, double preco, Date data) {
+    public Pedido(Long id, String descricao, double preco, Date data, String quantidade ) {
         this.id = id;
         this.descricao = descricao;
         this.preco = preco;
+        this.quantidade= quantidade;
         this.data = data;
     }
 
@@ -54,5 +55,13 @@ public class Pedido {
 
     public void setData(Date data) {
         this.data = data;
+    }
+
+    public String getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(String quantidade) {
+        this.quantidade = quantidade;
     }
 }
